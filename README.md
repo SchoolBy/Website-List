@@ -8,4 +8,6 @@ List of all the websites I have made and clickable links to get to them
 
 [Hextris](https://schoolby.github.io/hextris)
 
+[Minecraft](https://schoolby.github.io/Minecrafts/)
+
 Unblocker Coming Soon
