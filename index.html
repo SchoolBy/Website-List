@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <title>Josh's Website List</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #e86873; /* Green background */
+            color: Black; /* White text */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+        }
+        .button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
 </head>
-<body class="body">
-<style>
-    h1 {text-align: center;}
-    p {text-align: center;}
-    div {text-align: center;}
-</style>
-<section>
-<h1 class="heading"> Website List</
-</section>
-<div class="div-block"> [2048] - <p class="paragraph">
-<a href="https://schoolby.github.io/2048">https://schoolby.github.io/2048</a>
-</div>
-<div class="text-block-3">[Cookie Clicker] -<br>
-<a href="https://schoolby.github.io/CookieClikerV2">https://schoolby.github.io/CookieClikerV2/</a>
-</div>
-<div class="text-block-2"><br>[Hextris] -<br>
-<a href="https://schoolby.github.io/hextris">https://schoolby.github.io/hextris</a><br>
-</div>
-<div class="text-block"><br>[Minecraft] - <br>
-<a href="https://schoolby.github.io/Minecrafts">https://schoolby.github.io/Minecrafts/</a><br>
-</div>
-<div class="text-block-4"><br><br><br><br><br>Im working on an unblocker and more sites coming<a>
+<body>
+    <h1>Website List</h1>
+    <div class="container">
+        <div>
+            [2048] - <button class="button" onclick="window.location.href='https://schoolby.github.io/2048'">Visit 2048</button>
+        </div>
+        <div>
+            [Cookie Clicker] - <button class="button" onclick="window.location.href='https://schoolby.github.io/CookieClikerV2'">Visit Cookie Clicker</button>
+        </div>
+        <div>
+            [Hextris] - <button class="button" onclick="window.location.href='https://schoolby.github.io/hextris'">Visit Hextris</button>
+        </div>
+        <div>
+            [Minecraft] - <button class="button" onclick="window.location.href='https://schoolby.github.io/Minecrafts'">Visit Minecraft</button>
+        </div>
+        <div>
+            <br><br><br><br><br>
+            I'm working on an unblocker and more sites coming
+        </div>
+    </div>
+</body>
+</html>
