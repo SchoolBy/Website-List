@@ -163,3 +163,117 @@ h1 {
     font-size: 1rem;
     color: #cccccc;
 }
+
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    flex-direction: row; /* Change to row to align items horizontally */
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Styling for the image on the left side */
+.left-image {
+    width: 200px; /* Adjust width as needed */
+    height: 100vh; /* Full height of viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #1e1e1e; /* Optional background color matching body */
+}
+
+.left-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Main Container */
+.container {
+    background-color: #2b2b2b;
+    border-radius: 12px;
+    padding: 50px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 15px 3px rgba(255, 64, 64, 0.5); 
+    margin-left: 220px; /* Adjust margin to account for the width of the image */
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff4040;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.website-list {
+    list-style: none;
+    padding: 0;
+}
+
+.website-list li {
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #ff4040;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+.button:hover {
+    background-color: #ff6969;
+    box-shadow: 0 0 20px rgba(255, 64, 64, 0.6), 0 0 10px rgba(255, 64, 64, 0.4);
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(1);
+}
+
+.footer-info {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* Loading Animation */
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #ff4040; /* Red color */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear infinite;
+}
+
+/* Keyframes for spinning effect */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
