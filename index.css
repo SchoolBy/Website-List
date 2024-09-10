@@ -86,5 +86,5 @@ body {
     flex-direction: row; /* Change to row to align items horizontally */
     height: 100vh;
     margin: 0;
-    overflow: hidden; /* Prevent horizontal scrollbar */
+    overflow: visable; /* Prevent horizontal scrollbar */
 }
