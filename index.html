@@ -16,10 +16,25 @@
             <li><button class="button" onclick="window.location.href='https://schoolby.github.io/Minecrafts'">Minecraft</button></li>
             <li><button class="button" onclick="window.location.href='https://schoolby.github.io/Slope'">Slope</button></li>
             <li><button class="button" onclick="window.location.href='https://schoolby.github.io/YoHoHo'">YoHoHo.io(mobile Support)</button></li>
+            <li><button class="bookmark-button" onclick="bookmarkSite()">Add to Bookmarks</button></li>
         </ul>
         <div class="footer-info">
             I'm working on an unblocker and more sites are coming soon!
         </div>
     </div>
+<script>
+function bookmarkSite() {
+    var bookmarkMessage = "To add this site to your bookmarks, please press Ctrl+D (Cmd+D on Mac).";
+    
+    // Check for modern browsers that may not support direct bookmarking
+    if (window.sidebar && window.sidebar.addPanel) { // For Firefox < 23
+        window.sidebar.addPanel(document.title, window.location.href, '');
+    } else if (window.external && ('AddFavorite' in window.external)) { // For IE
+        window.external.AddFavorite(window.location.href, document.title);
+    } else { // For modern browsers
+        alert(bookmarkMessage);
+    }
+}
+</script>
 </body>
 </html>
