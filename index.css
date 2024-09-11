@@ -88,3 +88,15 @@ body {
     margin: 0;
     overflow: visable; /* Prevent horizontal scrollbar */
 }
+
+.bookmark-button {
+    background-color: #ff4040;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
