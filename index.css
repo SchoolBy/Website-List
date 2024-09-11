@@ -84,7 +84,7 @@ body {
     color: white;
     display: flex;
     flex-direction: row; /* Change to row to align items horizontally */
-    height: 500vh;
+    height: 150vh;
     margin: 0;
     overflow: visable; /* Prevent horizontal scrollbar */
 }
